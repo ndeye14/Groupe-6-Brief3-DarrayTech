@@ -1,6 +1,20 @@
+.banierreT {
+    background-image: url('/Groupe-6-Brief3-DarrayTech/public/images/bannieres/banner_testimonial.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+    margin-top: 7vh;
+    color: white;
+    padding: 28vh 0;
+}
+.banierreT .title{
+    margin-top: 10%;
+}
 .sectionTemoignage{
     /* width: 100%; */
     background-color: #F3F3F3;
+    margin-top: 3%;
 }
 #cardTemoignage{
     display: grid;
@@ -11,7 +25,7 @@
     align-items: center;
     text-align: center; 
 }
-#cardTemoignage p{
+#cardTemoignage .temoignageE{
     text-align: justify;
     padding: 10px;
 }
@@ -50,6 +64,16 @@
     .sectionTemoignage{
         width: 100%;
     }
+    .banierreT {
+        background-image: url('/Groupe-6-Brief3-DarrayTech/public/images/bannieres/banner_testimonial.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 550px;
+        margin-top: -2vh;
+        color: white;
+        padding: 28vh 0;
+    }
        
  }
 
@@ -60,18 +84,32 @@
     }
     #cardTemoignage{
         display: grid;
-        grid-template-columns: 2fr  2fr;
-       
-          
+        grid-template-columns: 2fr  2fr;    
+    }
+    .banierreT {
+        background-image: url('/Groupe-6-Brief3-DarrayTech/public/images/bannieres/banner_testimonial.png') ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 550px;
+        /* margin-top: -25vh; */
+        color: white;
+        padding: 28vh 0;
+    }
+    .banierreT .title{
+        margin-top: 11%;
     }
 }
 @media only screen  and (max-width: 500px) {
     
     #cardTemoignage{
         display: grid;
-        grid-template-columns: 2fr;
-       
+        grid-template-columns: 2fr; 
           
+    }
+    .banierreT .title{
+        margin-top: 22%;
+        padding-right: 3%;
     }
 }
 
