@@ -1,0 +1,77 @@
+.sectionTemoignage{
+    /* width: 100%; */
+    background-color: #F3F3F3;
+}
+#cardTemoignage{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    gap: 5vh;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center; 
+}
+#cardTemoignage p{
+    text-align: justify;
+    padding: 10px;
+}
+#profile{
+    width: 30%;
+    height: 30%;
+    margin-top: -15%;
+}
+
+#contenuTemoin{
+    padding: 5px;
+    background-color: white;
+}
+#contenuTemoin:hover{
+    background-color: #1F425D;  
+    transform: scale(1.1);
+    color: white;
+}
+#totalTemoignage{
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+    gap: 5vh;
+ 
+}
+
+
+.contenu{
+   
+    padding: 3%;
+    margin: 0 auto;
+    width: 100%;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1300px) {
+    .sectionTemoignage{
+        width: 100%;
+    }
+       
+ }
+
+@media only screen  and (max-width: 990px) {
+    .sectionTemoignage{
+        /* width: 100%; */
+    
+    }
+    #cardTemoignage{
+        display: grid;
+        grid-template-columns: 2fr  2fr;
+       
+          
+    }
+}
+@media only screen  and (max-width: 500px) {
+    
+    #cardTemoignage{
+        display: grid;
+        grid-template-columns: 2fr;
+       
+          
+    }
+}
+
