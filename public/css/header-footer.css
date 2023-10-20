@@ -42,8 +42,8 @@
     color: white;
     font-weight: bold;
 }
-.banierre {
-    background-image: url('../images/bannieres/bzz');
+.banierre{
+    background-image: url('../images/bannieres/banner_acceuil.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
