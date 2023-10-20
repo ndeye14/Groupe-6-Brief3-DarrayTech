@@ -13,6 +13,7 @@
     grid-template-columns: 1fr 1fr 1fr ;
     /* width: 80%; */
     margin: 1% auto;
+    gap: 5vh;
 }
 button{
     background-color: var(--second-color);
@@ -22,6 +23,7 @@ button{
 
  .candidater_carte .card {
     box-shadow: 2px 2px 4px gray;
+    
 }
 
  .candidater_carte .card-body .inf {
