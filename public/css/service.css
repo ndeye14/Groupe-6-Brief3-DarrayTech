@@ -1,3 +1,14 @@
+.banierre {
+    background-image: url('../images/bannieres/banner_\ services.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+    margin-top: -2vh;
+    color: white;
+    padding: 28vh 0;
+}
+
 /* text service */
 .timeline_area {
     position: relative;
@@ -186,7 +197,7 @@
     color: var(--main-color);
 }
 
-.hr hr {
+ hr {
     width: 20vh;
     height: 3px;
     border: 2px solid var(--second-color);

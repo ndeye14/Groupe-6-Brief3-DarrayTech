@@ -22,6 +22,10 @@
     <link rel="stylesheet" href="../public/css/service.css">
     <link rel="stylesheet" href="../public/css/team.css">
     <link rel="stylesheet" href="../public/css/temoignage.css">
+    <link rel="stylesheet" href="../public/css/formation.css">
+    <link rel="stylesheet" href="../public/css/barre.css">
+    <link rel="stylesheet" href="../public/css/pagination.css">
+    
 </head>
 <body>
     <!-- Header -->
@@ -50,9 +54,9 @@
             </div>
             <div class="second-menu-link">
                 <ul>
-                    <li><a class="active" href="../header-footer/header-footer.html">Accueil</a></li>
+                    <li><a  href="../header-footer/header-footer.html">Accueil</a></li>
                     <li><a href="../apropos/apropos.html">A propos</a></li>
-                    <li><a href="../formations/formation.html">Formation</a></li>
+                    <li><a href="../formations/formation.html" class="active">Formation</a></li>
                     <li><a href="../articles/article.html">Article</a></li>
                     <li><a href="../temoignages/temoignage.html">Témoignages</a></li>
                     <li><a href="../contact/contact.html">Contact</a></li>
@@ -62,9 +66,9 @@
                 <span class="close"><i class="fa-solid fa-xmark"></i></span>
                 <nav class="dropNav">
                     <ul class="dropFirst">
-                        <li><a class="active" href="../header-footer/header-footer.html">Accueil</a></li>
+                        <li><a  href="../header-footer/header-footer.html">Accueil</a></li>
                         <li><a href="../apropos/apropos.html">A propos</a></li>
-                        <li><a href="../formations/formation.html">Formation</a></li>
+                        <li><a href="../formations/formation.html" class="active">Formation</a></li>
                         <li><a href="../articles/article.html">Article</a></li>
                         <li><a href="../temoignages/temoignage.html">Témoignages</a></li>
                         <li><a href="../contact/contact.html">Contact</a></li>
@@ -79,12 +83,486 @@
     <div class="Votre_Contenu_ici">
         <div class="banierre">
             <div class="title">
-                <h1 class="card-title mb-2 text-dark fw-bold px-5 mt-4">Bienvenue sur <br> Daraay Technologie</h1>
+                <h1 class="card-title mb-2 text-dark fw-bold px-5 mt-4">Nos formations</h1>
                 <p class="card-text text-dark px-5">
-                    Créateurs de solutions pour un monde <br> numérique.
+                    Explorez le monde fascinant de la programmation avec notre formation <br> complète. Que vous soyez un débutant curieux
+                    ou
+                    développeur <br>expérimenté en quête de perfectionnement.
                 </p>
-                <button class="fw-bold ms-5 btn-decouvrir">Découvrir</button>
+                <a href="#formationSec"><button class="fw-bold ms-5 btn-decouvrir">Découvrir</button></a>
             </div>                
+        </div>
+    </div>
+    <!-- end banniere -->
+
+    <!-- section formation -->
+    <!-- end section formation -->
+    <section class="scetion-formation mt-5" id="formationSec">
+        <div class="container row ">
+            <div class="col-12 col-lg-5 ">
+                <p style="color:  var(--second-color); font-weight: bold;" class="ms-5">9 formations</p>
+            </div>
+            <div class="col-12 col-lg-4 ms-auto">
+                <div class="">
+                    <div class="search" id="searchInput">
+                        <input type="search" class="searchTerm" placeholder="Recherche formations" >
+                        <button  class="searchButton"  onclick="searchList()">
+                            <i class="fa fa-search fa-sm" ></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    
+    
+        <div class="container">
+            <div class="candidater_carte ">
+                <!-- carte1 -->
+                <div class="card" style="width: 18rem; height:94%;"  id="itemformation">
+                    <img src="../public/images/formations/html.png" class="card-img-top" alt="...">
+                    <div class="card-body text-center" style="height: 100%;">
+                        <p class="card-title" style="font-size: 16px;"> Fondementaux au langage html</p>
+                        <div class="inf d-flex">
+    
+                            <div class="inf1 d-flex mt-2"><img
+                                    src="https://yt3.googleusercontent.com/oYOaUPpYjb58Bn1PeV7GKJq3eEMGqQF0TSsDy4qYAzhnB8WQVk6KuzL89WDwMtaxIkRY-23dh7A=s1000-c-k-c0x00ffffff-no-rj"
+                                    alt="" class="rounded-circle " style="width:30px; height:30px;">
+                                &nbsp;<p style="font-size: 10px;">Darray Technologie</p>&nbsp;
+                            </div>
+                            <div class="inf2">
+                                <p class="icon mt-2 ">
+                                    <a href=""><img
+                                            src="https://t3.ftcdn.net/jpg/06/56/46/30/240_F_656463080_rP5yQCIXVgUzcyjsSmqyDSNeya8Cc8ZL.jpg"
+                                            alt="" style="width: 30px;height: 30px;"></a>
+                                    <a href=""><img src="../public/images/formations/commenter.png" alt=""
+                                            style="width: 24px;height: 24px;"></a>
+                                    <a href=""><img src="../public/images/formations/voircomment.png" alt=""></a>
+                                </p>
+    
+                                <!-- <ul>
+                                                    <li><i class="bi bi-calendar-fill"></i> &nbsp;inférieur à 3 mois</li>
+                                                    <li><i class="bi bi-calendar-fill"></i>&nbsp; octobre 2023</li>
+                                                    <li><i class="bi bi-calendar-fill"></i>&nbsp;Auvergne</li>
+                                                </ul> -->
+                            </div>
+                        </div>
+                        <div class="btn3 bd-black ">
+                            <a href="#" class="btn btn-primary">Ouvrir</a>
+                            <p class="star"><i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="0"></i>
+                                <i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="1"></i>
+                                <i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="2"></i>
+                                <i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="3"></i>
+                                <i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="4"></i>
+                            </p>
+    
+                            <!-- <a href="#" class="btn btn-primary">Postuler</a> -->
+                        </div>
+                    </div>
+    
+                </div>
+                <!-- fin carte1 -->
+                <!-- carte1 -->
+                <div class="card" style="width: 18rem; height:94%;"  id="itemformation">
+                    <img src="../public/images/formations/wordpress.png" class="card-img-top" alt="...">
+                    <div class="card-body" style="height: 100%;">
+                        <p class="card-title text-center"> Developpement d'application avec wordpress</p>
+                        <div class="inf d-flex">
+    
+                            <div class="inf1 d-flex mt-2"><img
+                                    src="https://yt3.googleusercontent.com/oYOaUPpYjb58Bn1PeV7GKJq3eEMGqQF0TSsDy4qYAzhnB8WQVk6KuzL89WDwMtaxIkRY-23dh7A=s1000-c-k-c0x00ffffff-no-rj"
+                                    alt="" class="rounded-circle " style="width:30px; height:30px;">
+                                &nbsp;<p style="font-size: 10px;">Darray Technologie</p>&nbsp;
+                            </div>
+                            <div class="inf2">
+                                <p class="icon mt-2 ">
+                                    <a href=""><img
+                                            src="https://t3.ftcdn.net/jpg/06/56/46/30/240_F_656463080_rP5yQCIXVgUzcyjsSmqyDSNeya8Cc8ZL.jpg"
+                                            alt="" style="width: 30px;height: 30px;"></a>
+                                    <a href=""><img src="../public/images/formations/commenter.png" alt=""
+                                            style="width: 24px;height: 24px;"></a>
+                                    <a href=""><img src="../public/images/formations/voircomment.png" alt=""></a>
+                                </p>
+                                <!-- <ul>
+                                                    <li><i class="bi bi-calendar-fill"></i> &nbsp;inférieur à 3 mois</li>
+                                                    <li><i class="bi bi-hourglass"></i>&nbsp; octobre 2023</li>
+                                                    <li><i class="bi bi-geo-alt-fill"></i>&nbsp;Auvergne</li>
+                                                </ul> -->
+                            </div>
+                        </div>
+                        <div class="btn3 bd-black">
+    
+                            <a href="#" class="btn btn-primary">Ouvrir</a>
+                            <p class="star"><i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="0"></i>
+                                <i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="1"></i>
+                                <i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="2"></i>
+                                <i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="3"></i>
+                                <i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="4"></i>
+                            </p>
+                            <!-- <a href="#" class="btn btn-primary">Postuler</a> -->
+                        </div>
+                    </div>
+    
+                </div>
+                <!-- fin carte1 -->
+                <!-- carte1 -->
+                <div class="card" style="width: 18rem; height:94%;"  id="itemformation">
+                    <img src="../public/images/formations/wix.png" class="card-img-top" alt="...">
+                    <div class="card-body" style="height: 100%;">
+                        <p class="card-title text-center"> Developpement d'application avec wix</p>
+                        <div class="inf d-flex">
+    
+                            <div class="inf1 d-flex mt-2"><img
+                                    src="https://yt3.googleusercontent.com/oYOaUPpYjb58Bn1PeV7GKJq3eEMGqQF0TSsDy4qYAzhnB8WQVk6KuzL89WDwMtaxIkRY-23dh7A=s1000-c-k-c0x00ffffff-no-rj"
+                                    alt="" class="rounded-circle " style="width:25px; height:25px;">
+                                &nbsp;<p style="font-size: 10px;">Darray Technologie</p>&nbsp;
+                            </div>
+                            <div class="inf2">
+                                <p class="icon mt-2 ">
+                                    <a href=""><img
+                                            src="https://t3.ftcdn.net/jpg/06/56/46/30/240_F_656463080_rP5yQCIXVgUzcyjsSmqyDSNeya8Cc8ZL.jpg"
+                                            alt="" style="width: 30px;height: 30px;"></a>
+                                    <a href=""><img src="../public/images/formations/commenter.png" alt=""
+                                            style="width: 24px;height: 24px;"></a>
+                                    <a href=""><img src="../public/images/formations/voircomment.png" alt=""></a>
+                                </p>
+                                <!-- <ul>
+                                                    <li><i class="bi bi-calendar-fill"></i> &nbsp;inférieur à 3 mois</li>
+                                                    <li><i class="bi bi-hourglass"></i>&nbsp; octobre 2023</li>
+                                                    <li><i class="bi bi-geo-alt-fill"></i>&nbsp;Auvergne</li>
+                                                </ul> -->
+                            </div>
+                        </div>
+                        <div class="btn3 bd-black">
+    
+                            <a href="#" class="btn btn-primary">Ouvrir</a>
+                            <p class="star"><i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="0"></i>
+                                <i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="1"></i>
+                                <i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="2"></i>
+                                <i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="3"></i>
+                                <i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="4"></i>
+                            </p>
+                            <!-- <a href="#" class="btn btn-primary">Postuler</a> -->
+                        </div>
+                    </div>
+    
+                </div>
+                <!-- fin carte1 -->
+                <!-- carte1 -->
+                <div class="card" style="width: 18rem; height:94%;"  id="itemformation">
+                    <img src="../public/images/formations/js.png" class="card-img-top" alt="...">
+                    <div class="card-body" style="height: 100%;">
+                        <p class="card-title text-center"> Dynamisme cote client <br>
+                            l'essentiel</p>
+                        <div class="inf d-flex">
+    
+                            <div class="inf1 d-flex mt-2"><img
+                                    src="https://yt3.googleusercontent.com/oYOaUPpYjb58Bn1PeV7GKJq3eEMGqQF0TSsDy4qYAzhnB8WQVk6KuzL89WDwMtaxIkRY-23dh7A=s1000-c-k-c0x00ffffff-no-rj"
+                                    alt="" class="rounded-circle " style="width:30px; height:30px;">
+                                &nbsp;<p style="font-size: 10px;">Darray Technologie</p>&nbsp;
+                            </div>
+                            <div class="inf2">
+                                <p class="icon mt-2 ">
+                                    <a href=""><img
+                                            src="https://t3.ftcdn.net/jpg/06/56/46/30/240_F_656463080_rP5yQCIXVgUzcyjsSmqyDSNeya8Cc8ZL.jpg"
+                                            alt="" style="width: 30px;height: 30px;"></a>
+                                    <a href=""><img src="../public/images/formations/commenter.png" alt=""
+                                            style="width: 24px;height: 24px;"></a>
+                                    <a href=""><img src="../public/images/formations/voircomment.png" alt=""></a>
+                                </p>
+                                <!-- <ul>
+                                                    <li><i class="bi bi-calendar-fill"></i> &nbsp;inférieur à 3 mois</li>
+                                                    <li><i class="bi bi-hourglass"></i>&nbsp; octobre 2023</li>
+                                                    <li><i class="bi bi-geo-alt-fill"></i>&nbsp;Auvergne</li>
+                                                </ul> -->
+                            </div>
+                        </div>
+                        <div class="btn3 bd-black">
+    
+                            <a href="../details-formation/details-formation.html" class="btn btn-primary">Ouvrir</a>
+                            <p class="star"><i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="0"></i>
+                                <i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="1"></i>
+                                <i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="2"></i>
+                                <i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="3"></i>
+                                <i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="4"></i>
+                            </p>
+                            <!-- <a href="#" class="btn btn-primary">Postuler</a> -->
+                        </div>
+                    </div>
+    
+                </div>
+                <!-- fin carte1 -->
+                <!-- carte1 -->
+                <div class="card" style="width: 18rem; height:94%;"  id="itemformation">
+                    <img src="../public/images/formations/css.png" class="card-img-top" alt="...">
+                    <div class="card-body" style="height: 100%;">
+                        <p class="card-title text-center"> Stylisation et animation de vos pages</p>
+                        <div class="inf d-flex">
+    
+                            <div class="inf1 d-flex mt-2"><img
+                                    src="https://yt3.googleusercontent.com/oYOaUPpYjb58Bn1PeV7GKJq3eEMGqQF0TSsDy4qYAzhnB8WQVk6KuzL89WDwMtaxIkRY-23dh7A=s1000-c-k-c0x00ffffff-no-rj"
+                                    alt="" class="rounded-circle " style="width:30px; height:30px;">
+                                &nbsp;<p style="font-size: 10px;">Darray Technologie</p>&nbsp;
+                            </div>
+                            <div class="inf2">
+                                <p class="icon mt-2 ">
+                                    <a href=""><img
+                                            src="https://t3.ftcdn.net/jpg/06/56/46/30/240_F_656463080_rP5yQCIXVgUzcyjsSmqyDSNeya8Cc8ZL.jpg"
+                                            alt="" style="width: 30px;height: 30px;"></a>
+                                    <a href=""><img src="../public/images/formations/commenter.png" alt=""
+                                            style="width: 24px;height: 24px;"></a>
+                                    <a href=""><img src="../public/images/formations/voircomment.png" alt=""></a>
+                                </p>
+                                <!-- <ul>
+                                                    <li><i class="bi bi-calendar-fill"></i> &nbsp;inférieur à 3 mois</li>
+                                                    <li><i class="bi bi-hourglass"></i>&nbsp; octobre 2023</li>
+                                                    <li><i class="bi bi-geo-alt-fill"></i>&nbsp;Auvergne</li>
+                                                </ul> -->
+                            </div>
+                        </div>
+                        <div class="btn3 bd-black">
+    
+                            <a href="#" class="btn btn-primary">Ouvrir</a>
+                            <p class="star"><i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="0"></i>
+                                <i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="1"></i>
+                                <i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="2"></i>
+                                <i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="3"></i>
+                                <i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="4"></i>
+                            </p>
+                            <!-- <a href="#" class="btn btn-primary">Postuler</a> -->
+                        </div>
+                    </div>
+    
+                </div>
+                <!-- fin carte1 -->
+                <!-- carte1 -->
+                <div class="card" style="width: 18rem; height:94%;"  id="itemformation">
+                    <img src="../public/images/formations/uml.png" class="card-img-top" alt="...">
+                    <div class="card-body" style="height: 100%;">
+                        <p class="card-title text-center"> Modelisation etanalyse d'une base de donnees </p>
+                        <div class="inf d-flex">
+    
+                            <div class="inf1 d-flex mt-2"><img
+                                    src="https://yt3.googleusercontent.com/oYOaUPpYjb58Bn1PeV7GKJq3eEMGqQF0TSsDy4qYAzhnB8WQVk6KuzL89WDwMtaxIkRY-23dh7A=s1000-c-k-c0x00ffffff-no-rj"
+                                    alt="" class="rounded-circle " style="width:30px; height:30px;">
+                                &nbsp;<p style="font-size: 10px;">Darray Technologie</p>&nbsp;
+                            </div>
+                            <div class="inf2">
+                                <p class="icon mt-2 ">
+                                    <a href=""><img
+                                            src="https://t3.ftcdn.net/jpg/06/56/46/30/240_F_656463080_rP5yQCIXVgUzcyjsSmqyDSNeya8Cc8ZL.jpg"
+                                            alt="" style="width: 30px;height: 30px;"></a>
+                                    <a href=""><img src="../public/images/formations/commenter.png" alt=""
+                                            style="width: 24px;height: 24px;"></a>
+                                    <a href=""><img src="../public/images/formations/voircomment.png" alt=""></a>
+                                </p>
+                                <!-- <ul>
+                                                    <li><i class="bi bi-calendar-fill"></i> &nbsp;inférieur à 3 mois</li>
+                                                    <li><i class="bi bi-hourglass"></i>&nbsp; octobre 2023</li>
+                                                    <li><i class="bi bi-geo-alt-fill"></i>&nbsp;Auvergne</li>
+                                                </ul> -->
+                            </div>
+                        </div>
+                        <div class="btn3 bd-black">
+    
+                            <a href="#" class="btn btn-primary">Ouvrir</a>
+                            <p class="star"><i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="0"></i>
+                                <i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="1"></i>
+                                <i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="2"></i>
+                                <i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="3"></i>
+                                <i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="4"></i>
+                            </p>
+                            <!-- <a href="#" class="btn btn-primary">Postuler</a> -->
+                        </div>
+                    </div>
+    
+                </div>
+                <!-- fin carte1 -->
+                <!-- carte1 -->
+                <div class="card" style="width: 18rem; height:94%;"  id="itemformation">
+                    <img src="../public/images/formations/ui.png" class="card-img-top" alt="...">
+                    <div class="card-body" style="height: 100%;">
+                        <p class="card-title text-center"> UX/UI Design Maquetage et prototypase </p>
+                        <div class="inf d-flex">
+    
+                            <div class="inf1 d-flex mt-2"><img
+                                    src="https://yt3.googleusercontent.com/oYOaUPpYjb58Bn1PeV7GKJq3eEMGqQF0TSsDy4qYAzhnB8WQVk6KuzL89WDwMtaxIkRY-23dh7A=s1000-c-k-c0x00ffffff-no-rj"
+                                    alt="" class="rounded-circle " style="width:30px; height:30px;">
+                                &nbsp;<p style="font-size: 10px;">Darray Technologie</p>&nbsp;
+                            </div>
+                            <div class="inf2">
+                                <p class="icon mt-2 ">
+                                    <a href=""><img
+                                            src="https://t3.ftcdn.net/jpg/06/56/46/30/240_F_656463080_rP5yQCIXVgUzcyjsSmqyDSNeya8Cc8ZL.jpg"
+                                            alt="" style="width: 30px;height: 30px;"></a>
+                                    <a href=""><img src="../public/images/formations/commenter.png" alt=""
+                                            style="width: 24px;height: 24px;"></a>
+                                    <a href=""><img src="../public/images/formations/voircomment.png" alt=""></a>
+                                </p>
+                                <!-- <ul>
+                                                    <li><i class="bi bi-calendar-fill"></i> &nbsp;inférieur à 3 mois</li>
+                                                    <li><i class="bi bi-hourglass"></i>&nbsp; octobre 2023</li>
+                                                    <li><i class="bi bi-geo-alt-fill"></i>&nbsp;Auvergne</li>
+                                                </ul> -->
+                            </div>
+                        </div>
+                        <div class="btn3 bd-black ">
+    
+                            <a href="#" class="btn btn-primary">Ouvrir</a>
+                            <p class="star"><i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="0"></i>
+                                <i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="1"></i>
+                                <i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="2"></i>
+                                <i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="3"></i>
+                                <i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="4"></i>
+                            </p>
+                            <!-- <a href="#" class="btn btn-primary">Postuler</a> -->
+                        </div>
+                    </div>
+    
+                </div>
+                <!-- fin carte1 -->
+                <!-- carte1 -->
+                <div class="card" style="width: 18rem; height:94%;" id="itemformation">
+                    <img src="../public/images/formations/php.png" class="card-img-top" alt="...">
+                    <div class="card-body" style="height: 100%;">
+                        <p class="card-title text-center"> Fondementaux en php <br>
+                            l'essentiel</p>
+                        <div class="inf d-flex">
+    
+                            <div class="inf1 d-flex mt-2"><img
+                                    src="https://yt3.googleusercontent.com/oYOaUPpYjb58Bn1PeV7GKJq3eEMGqQF0TSsDy4qYAzhnB8WQVk6KuzL89WDwMtaxIkRY-23dh7A=s1000-c-k-c0x00ffffff-no-rj"
+                                    alt="" class="rounded-circle " style="width:30px; height:30px;">
+                                &nbsp;<p style="font-size: 10px;">Darray Technologie</p>&nbsp;
+                            </div>
+                            <div class="inf2">
+                                <p class="icon mt-2 ">
+                                    <a href=""><img
+                                            src="https://t3.ftcdn.net/jpg/06/56/46/30/240_F_656463080_rP5yQCIXVgUzcyjsSmqyDSNeya8Cc8ZL.jpg"
+                                            alt="" style="width: 30px;height: 30px;"></a>
+                                    <a href=""><img src="../public/images/formations/commenter.png" alt=""
+                                            style="width: 24px;height: 24px;"></a>
+                                    <a href=""><img src="../public/images/formations/voircomment.png" alt=""></a>
+                                </p>
+                                <!-- <ul>
+                                                    <li><i class="bi bi-calendar-fill"></i> &nbsp;inférieur à 3 mois</li>
+                                                    <li><i class="bi bi-hourglass"></i>&nbsp; octobre 2023</li>
+                                                    <li><i class="bi bi-geo-alt-fill"></i>&nbsp;Auvergne</li>
+                                                </ul> -->
+                            </div>
+                        </div>
+                        <div class="btn3 bd-black">
+    
+                            <a href="#" class="btn btn-primary">Ouvrir</a>
+                            <p class="star"><i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="0"></i>
+                                <i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="1"></i>
+                                <i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="2"></i>
+                                <i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="3"></i>
+                                <i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="4"></i>
+                            </p>
+                            <!-- <a href="#" class="btn btn-primary">Postuler</a> -->
+                        </div>
+                    </div>
+    
+                </div>
+                <!-- fin carte1 -->
+                <!-- carte1 -->
+                <div class="card" style="width: 18rem; height:94%;"  id="itemformation">
+                    <img src="../public/images/formations/canva.png" class="card-img-top" alt="...">
+                    <div class="card-body" style="height: 100%;">
+                        <p class="card-title  text-center"> Design logo et presentation <br>
+                            l'essentiel</p>
+                        <div class="inf d-flex">
+    
+                            <div class="inf1 d-flex mt-2"><img
+                                    src="https://yt3.googleusercontent.com/oYOaUPpYjb58Bn1PeV7GKJq3eEMGqQF0TSsDy4qYAzhnB8WQVk6KuzL89WDwMtaxIkRY-23dh7A=s1000-c-k-c0x00ffffff-no-rj"
+                                    alt="" class="rounded-circle " style="width:30px; height:30px;">
+                                &nbsp;<p style="font-size: 10px;">Darray Technologie</p>&nbsp;
+                            </div>
+                            <div class="inf2">
+                                <p class="icon mt-2 ">
+                                    <a href=""><img
+                                            src="https://t3.ftcdn.net/jpg/06/56/46/30/240_F_656463080_rP5yQCIXVgUzcyjsSmqyDSNeya8Cc8ZL.jpg"
+                                            alt="" style="width: 30px;height: 30px;"></a>
+                                    <a href="" data-modal="modalTwo">
+                                        <img src="../public/images/formations/commenter.png" alt=""
+                                            style="width: 24px;height: 24px;"></a>
+                                    <a href=""><img src="../public/images/formations/voircomment.png" alt=""></a>
+                                </p>
+                                <!-- <ul>
+                                                    <li><i class="bi bi-calendar-fill"></i> &nbsp;inférieur à 3 mois</li>
+                                                    <li><i class="bi bi-hourglass"></i>&nbsp; octobre 2023</li>
+                                                    <li><i class="bi bi-geo-alt-fill"></i>&nbsp;Auvergne</li>
+                                                </ul> -->
+                            </div>
+                        </div>
+                        <div class="btn3 bd-black ">
+    
+                            <a href="#" class="btn btn-primary">Ouvrir</a>
+                            <p class="star"><i class="fa-solid stargrey fa-star" style="color: #e8e8e8;" data-index="0"></i>
+                                <i class="fa-solid stargrey fa-star" style="color: #e8e8e8;" data-index="1"></i>
+                                <i class="fa-solid stargrey fa-star" style="color: #e8e8e8;" data-index="2"></i>
+                                <i class="fa-solid stargrey fa-star" style="color: #e8e8e8;" data-index="3"></i>
+                                <i class="fa-solid stargrey fa-star" style="color: #e8e8e8;" data-index="4"></i>
+                            </p>
+                            <!-- <a href="#" class="btn btn-primary">Postuler</a> -->
+                        </div>
+                    </div>
+    
+                </div>
+                <!-- fin carte1 -->
+            </div>
+    
+    
+        </div>
+    
+        <!-- </div> -->
+    
+    
+    
+    </section>
+    
+    <!-- section pagination -->
+    <!-- <section> -->
+    <div class="container contpagination mb-3">
+        <div class="pagination ">
+            <a href="#">Preview</a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">Next</a>
+        </div>
+    
+    </div>
+    
+    <!-- </section> -->
+
+    <!-- end section formation -->
+    <!-- Pop-Up -->
+    <div id="modalOne" class="modal">
+        <div class="modal-content">
+            <div class="listeCommentaire">
+                <a class="close">&times;</a>
+                <h2>Listes des commentaires</h2>
+            </div>
+        </div>
+    </div>
+    <div id="modalTwo" class="modal">
+        <div class="modal-content">
+            <div class="contact-form">
+                <span class="close">&times;</span>
+                <form action="/">
+                    <h2>Laissez un commentaire</h2>
+                    <div>
+                        <label for="nameInput">Nom d’utilisateur</label>
+                        <input class="fname" type="text" id="nameInput" name="name" />
+                    </div>
+                    <span>Message</span>
+                    <div>
+                        <textarea rows="4" class="fname" id="messageInput"></textarea>
+                    </div>
+                    <button type="submit" href="#">Publier</button>
+                </form>
+            </div>
         </div>
     </div>
     <!-- Debut section Footer -->
@@ -214,5 +692,25 @@
         })
         
     </script>
+    <script>
+        // fonction Recherche             
+        function searchList() {
+            var input, filter, card, item, i, text;
+            input = document.getElementById('searchInput');
+            filter = input.value.toUpperCase();
+            card = document.querySelector('.candidater_carte');
+            item = card.getElementsByClassName('itemformation');
+            for (i = 0; i < item.length; i++) {
+                text = item[i].textContent || item[i].innerText;
+                if (text.toUpperCase().indexOf(filter) > -1) {
+                    item[i].style.display = '';
+                } else {
+                    item[i].style.display = 'none';
+                }
+            }
+        }
+
+    </script>
+    <script src="../public/js/local.js"></script>
 </body>
 </html>
