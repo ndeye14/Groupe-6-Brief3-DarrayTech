@@ -17,7 +17,7 @@
     <!-- Script-bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!-- Link js -->
-    <script src="../public/js/header-footer.js"></script>
+    <!-- <script src="../public/js/header-footer.js"></script> -->
     <link rel="stylesheet" href="../public/css/articles.css">
 </head>
 <body>
@@ -219,7 +219,7 @@
                       <div>
                         <textarea rows="4" class="fname" id="messageInput"></textarea>
                       </div>
-                      <button type="submit" href="/">Publier</button>
+                      <button type="submit" class="close">Publier</button>
                     </form>
                   </div>
                 </div>
@@ -331,8 +331,10 @@
                 </div>
                 <div>
                     <h3>Newsletter</h3>
-                    <input type="text" class="input-newsletter" placeholder="Enter your email ">
-                    <button class="btn-suscribe">Suscribe</button>
+                       <form action="" id="formInput">
+                        <input class="form-control input-newsletter" type="text" placeholder="Enter your mail" id="Email">
+                        <button class="btn btn-suscribe">Suscribe</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -421,5 +423,10 @@
         })
         
     </script>
+    <script src="../public/js/header-footer.js"></script>
+    <!-- sweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <!-- Jquery -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </body>
 </html>
