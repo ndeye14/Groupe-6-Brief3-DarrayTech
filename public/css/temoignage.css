@@ -59,6 +59,18 @@
     width: 100%;
     align-items: center;
 }
+#soulignement{
+    width: 20%;
+    display: block;
+    margin: 0 auto;
+    background-color: var(--second-color);
+    height: 3px;
+    margin-bottom: 5vh;
+}
+#titrePage{
+    text-align: center;
+    font-weight: bold;
+}
 
 @media only screen and (max-width: 1300px) {
     .sectionTemoignage{
@@ -78,6 +90,8 @@
  }
 
 @media only screen  and (max-width: 990px) {
+    
+    
     .sectionTemoignage{
         /* width: 100%; */
     
