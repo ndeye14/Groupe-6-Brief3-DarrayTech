@@ -16,7 +16,7 @@
 }
 /* banner */
 .banierre {
-    background-image: url('../images/bannieres/banner_apropos.png') !important;
+    background-image: url('../images/bannieres/banner_apropos.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
