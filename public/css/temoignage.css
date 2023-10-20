@@ -1,4 +1,4 @@
-.banierreT {
+.banierreTe {
     background-image: url('../images/bannieres/banner_testimonial.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -9,7 +9,7 @@
     padding: 28vh 0;
 }
 .banierreT .title{
-    margin-top: 10%;
+    margin-top: 20%;
 }
 .sectionTemoignage{
     /* width: 100%; */
