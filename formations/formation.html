@@ -16,8 +16,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Script-bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <!-- Link js -->
-    <script src="../public/js/header-footer.js"></script>
     <link rel="stylesheet" href="../public/css/page_apropos.css">
     <link rel="stylesheet" href="../public/css/service.css">
     <link rel="stylesheet" href="../public/css/team.css">
@@ -89,37 +87,38 @@
                     ou
                     développeur <br>expérimenté en quête de perfectionnement.
                 </p>
-                <a href="#formationSec"><button class="fw-bold ms-5 btn-decouvrir">Découvrir</button></a>
+                <a href="#formationSec"><button class="fw-bold ms-5 btn-dec ">Découvrir</button></a>
             </div>                
         </div>
     </div>
     <!-- end banniere -->
+    
 
-    <!-- section formation -->
+    <!-- section formation -->   
     <!-- end section formation -->
-    <section class="scetion-formation mt-5" id="formationSec">
+    <section class="scetion-formation mt-5 formation" id="formationSec">
+        
         <div class="container row ">
             <div class="col-12 col-lg-5 ">
-                <p style="color:  var(--second-color); font-weight: bold;" class="ms-5">9 formations</p>
+               <button class="miseajour"   onclick="history.go(0)"><h4 style="color:  var(--second-color); font-weight: bold;" class="ms-5">9 formations</h4></button>
             </div>
-            <div class="col-12 col-lg-4 ms-auto">
+            <div class="col-12 col-lg-5 ms-auto " id="buttons" >
+
                 <div class="">
                     <div class="search" id="searchInput">
-                        <input type="search" class="searchTerm" placeholder="Recherche formations" >
-                        <button  class="searchButton"  onclick="searchList()">
+                        <input name="search" type="text" class="searchTerm" id="searchBar" placeholder="Recherche formations" >
+                        <button type="button" class="searchButton" >
                             <i class="fa fa-search fa-sm" ></i>
                         </button>
                     </div>
                 </div>
             </div>
     
-        </div>
-    
-    
-        <div class="container">
-            <div class="candidater_carte ">
+        </div>    
+        <div class="container candidater_carte "  >
                 <!-- carte1 -->
-                <div class="card" style="width: 18rem; height:94%;"  id="itemformation">
+              
+                <div class="card" style="width: 18rem; height:94%;" >
                     <img src="../public/images/formations/html.png" class="card-img-top" alt="...">
                     <div class="card-body text-center" style="height: 100%;">
                         <p class="card-title" style="font-size: 16px;"> Fondementaux au langage html</p>
@@ -132,24 +131,19 @@
                             </div>
                             <div class="inf2">
                                 <p class="icon mt-2 ">
+        
                                     <a href=""><img
                                             src="https://t3.ftcdn.net/jpg/06/56/46/30/240_F_656463080_rP5yQCIXVgUzcyjsSmqyDSNeya8Cc8ZL.jpg"
                                             alt="" style="width: 30px;height: 30px;"></a>
-                                    <a href=""><img src="../public/images/formations/commenter.png" alt=""
-                                            style="width: 24px;height: 24px;"></a>
-                                    <a href=""><img src="../public/images/formations/voircomment.png" alt=""></a>
+                                            <button class=" clr button" data-modal="modalTwo"><img src="../public/images/formations/commenter.png" alt=""
+                                                style="width: 24px;height: 24px;"></button>
+                                                <button class=" clr button" data-modal="modalOne"><img src="../public/images/formations/voircomment.png" alt=""></button>
                                 </p>
-    
-                                <!-- <ul>
-                                                    <li><i class="bi bi-calendar-fill"></i> &nbsp;inférieur à 3 mois</li>
-                                                    <li><i class="bi bi-calendar-fill"></i>&nbsp; octobre 2023</li>
-                                                    <li><i class="bi bi-calendar-fill"></i>&nbsp;Auvergne</li>
-                                                </ul> -->
                             </div>
                         </div>
                         <div class="btn3 bd-black ">
 
-                            <a href="../details-formation/details-formation-html.html" class="btn btn-primary"><button >Ouvrir</button></a>
+                            <a href="../details-formation/details-formation-html.html" class="btn btn-primary"><button><button>ouvrir</button></button></a>
                             <p class="star"><i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="0"></i>
                                 <i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="1"></i>
                                 <i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="2"></i>
@@ -162,9 +156,11 @@
                     </div>
     
                 </div>
+             
                 <!-- fin carte1 -->
                 <!-- carte1 -->
-                <div class="card" style="width: 18rem; height:94%;"  id="itemformation">
+              
+                <div class="card" style="width: 18rem; height:94%;"   >
                     <img src="../public/images/formations/wordpress.png" class="card-img-top" alt="...">
                     <div class="card-body" style="height: 100%;">
                         <p class="card-title text-center"> Developpement d'application avec wordpress</p>
@@ -177,23 +173,20 @@
                             </div>
                             <div class="inf2">
                                 <p class="icon mt-2 ">
-                                    <a href=""><img
-                                            src="https://t3.ftcdn.net/jpg/06/56/46/30/240_F_656463080_rP5yQCIXVgUzcyjsSmqyDSNeya8Cc8ZL.jpg"
+                                
+                                    <a href=""><img src="https://t3.ftcdn.net/jpg/06/56/46/30/240_F_656463080_rP5yQCIXVgUzcyjsSmqyDSNeya8Cc8ZL.jpg"
                                             alt="" style="width: 30px;height: 30px;"></a>
-                                    <a href=""><img src="../public/images/formations/commenter.png" alt=""
-                                            style="width: 24px;height: 24px;"></a>
-                                    <a href=""><img src="../public/images/formations/voircomment.png" alt=""></a>
+                                    <button class=" clr button" data-modal="modalTwo"><img src="../public/images/formations/commenter.png" alt=""
+                                            style="width: 24px;height: 24px;"></button>
+                                    <button class=" clr button" data-modal="modalOne"><img src="../public/images/formations/voircomment.png"
+                                            alt=""></button>
                                 </p>
-                                <!-- <ul>
-                                                    <li><i class="bi bi-calendar-fill"></i> &nbsp;inférieur à 3 mois</li>
-                                                    <li><i class="bi bi-hourglass"></i>&nbsp; octobre 2023</li>
-                                                    <li><i class="bi bi-geo-alt-fill"></i>&nbsp;Auvergne</li>
-                                                </ul> -->
+                               
                             </div>
                         </div>
                         <div class="btn3 bd-black">
     
-                            <a href="../details-formation/details-formation-wordpress.html" class="btn btn-primary"><button>Ouvrir</button></a>
+                            <a href="../details-formation/details-formation-wordpress.html" class="btn btn-primary"><button><button>ouvrir</button></button></a>
                             <p class="star"><i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="0"></i>
                                 <i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="1"></i>
                                 <i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="2"></i>
@@ -205,9 +198,11 @@
                     </div>
     
                 </div>
+              
                 <!-- fin carte1 -->
                 <!-- carte1 -->
-                <div class="card" style="width: 18rem; height:94%;"  id="itemformation">
+              
+                <div class="card" style="width: 18rem; height:94%;"   >
                     <img src="../public/images/formations/wix.png" class="card-img-top" alt="...">
                     <div class="card-body" style="height: 100%;">
                         <p class="card-title text-center"> Developpement d'application avec wix</p>
@@ -219,24 +214,21 @@
                                 &nbsp;<p style="font-size: 10px;">Darray Technologie</p>&nbsp;
                             </div>
                             <div class="inf2">
-                                <p class="icon mt-2 ">
-                                    <a href=""><img
-                                            src="https://t3.ftcdn.net/jpg/06/56/46/30/240_F_656463080_rP5yQCIXVgUzcyjsSmqyDSNeya8Cc8ZL.jpg"
-                                            alt="" style="width: 30px;height: 30px;"></a>
-                                    <a href=""><img src="../public/images/formations/commenter.png" alt=""
-                                            style="width: 24px;height: 24px;"></a>
-                                    <a href=""><img src="../public/images/formations/voircomment.png" alt=""></a>
-                                </p>
-                                <!-- <ul>
-                                                    <li><i class="bi bi-calendar-fill"></i> &nbsp;inférieur à 3 mois</li>
-                                                    <li><i class="bi bi-hourglass"></i>&nbsp; octobre 2023</li>
-                                                    <li><i class="bi bi-geo-alt-fill"></i>&nbsp;Auvergne</li>
-                                                </ul> -->
+                            <p class="icon mt-2 ">
+                            
+                                <a href=""><img src="https://t3.ftcdn.net/jpg/06/56/46/30/240_F_656463080_rP5yQCIXVgUzcyjsSmqyDSNeya8Cc8ZL.jpg"
+                                        alt="" style="width: 30px;height: 30px;"></a>
+                                <button class=" clr button" data-modal="modalTwo"><img src="../public/images/formations/commenter.png" alt=""
+                                        style="width: 24px;height: 24px;"></button>
+                                <button class=" clr button" data-modal="modalOne"><img src="../public/images/formations/voircomment.png"
+                                        alt=""></button>
+                            </p>
+                               
                             </div>
                         </div>
                         <div class="btn3 bd-black">
     
-                            <a href="#" class="btn btn-primary"><button>Ouvrir</button></a>
+                            <a href="#" class="btn btn-primary"><button>ouvrir</button></a>
                             <p class="star"><i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="0"></i>
                                 <i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="1"></i>
                                 <i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="2"></i>
@@ -248,9 +240,11 @@
                     </div>
     
                 </div>
+             
                 <!-- fin carte1 -->
                 <!-- carte1 -->
-                <div class="card" style="width: 18rem; height:94%;"  id="itemformation">
+                
+                <div class="card" style="width: 18rem; height:94%;"   >
                     <img src="../public/images/formations/js.png" class="card-img-top" alt="...">
                     <div class="card-body" style="height: 100%;">
                         <p class="card-title text-center"> Dynamisme cote client <br>
@@ -264,23 +258,20 @@
                             </div>
                             <div class="inf2">
                                 <p class="icon mt-2 ">
-                                    <a href=""><img
-                                            src="https://t3.ftcdn.net/jpg/06/56/46/30/240_F_656463080_rP5yQCIXVgUzcyjsSmqyDSNeya8Cc8ZL.jpg"
+                                
+                                    <a href=""><img src="https://t3.ftcdn.net/jpg/06/56/46/30/240_F_656463080_rP5yQCIXVgUzcyjsSmqyDSNeya8Cc8ZL.jpg"
                                             alt="" style="width: 30px;height: 30px;"></a>
-                                    <a href=""><img src="../public/images/formations/commenter.png" alt=""
-                                            style="width: 24px;height: 24px;"></a>
-                                    <a href=""><img src="../public/images/formations/voircomment.png" alt=""></a>
+                                    <button class=" clr button" data-modal="modalTwo"><img src="../public/images/formations/commenter.png" alt=""
+                                            style="width: 24px;height: 24px;"></button>
+                                    <button class=" clr button" data-modal="modalOne"><img src="../public/images/formations/voircomment.png"
+                                            alt=""></button>
                                 </p>
-                                <!-- <ul>
-                                                    <li><i class="bi bi-calendar-fill"></i> &nbsp;inférieur à 3 mois</li>
-                                                    <li><i class="bi bi-hourglass"></i>&nbsp; octobre 2023</li>
-                                                    <li><i class="bi bi-geo-alt-fill"></i>&nbsp;Auvergne</li>
-                                                </ul> -->
+                               
                             </div>
                         </div>
                         <div class="btn3 bd-black">
     
-                            <a href="../details-formation/details-formation.html" class="btn btn-primary"><button>Ouvrir</button></a>
+                            <a href="../details-formation/details-formation.html" class="btn btn-primary"><button>ouvrir</button></a>
                             <p class="star"><i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="0"></i>
                                 <i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="1"></i>
                                 <i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="2"></i>
@@ -294,7 +285,7 @@
                 </div>
                 <!-- fin carte1 -->
                 <!-- carte1 -->
-                <div class="card" style="width: 18rem; height:94%;"  id="itemformation">
+                <div class="card" style="width: 18rem; height:94%;"   >
                     <img src="../public/images/formations/css.png" class="card-img-top" alt="...">
                     <div class="card-body" style="height: 100%;">
                         <p class="card-title text-center"> Stylisation et animation de vos pages</p>
@@ -306,24 +297,21 @@
                                 &nbsp;<p style="font-size: 10px;">Darray Technologie</p>&nbsp;
                             </div>
                             <div class="inf2">
-                                <p class="icon mt-2 ">
-                                    <a href=""><img
-                                            src="https://t3.ftcdn.net/jpg/06/56/46/30/240_F_656463080_rP5yQCIXVgUzcyjsSmqyDSNeya8Cc8ZL.jpg"
-                                            alt="" style="width: 30px;height: 30px;"></a>
-                                    <a href=""><img src="../public/images/formations/commenter.png" alt=""
-                                            style="width: 24px;height: 24px;"></a>
-                                    <a href=""><img src="../public/images/formations/voircomment.png" alt=""></a>
-                                </p>
-                                <!-- <ul>
-                                                    <li><i class="bi bi-calendar-fill"></i> &nbsp;inférieur à 3 mois</li>
-                                                    <li><i class="bi bi-hourglass"></i>&nbsp; octobre 2023</li>
-                                                    <li><i class="bi bi-geo-alt-fill"></i>&nbsp;Auvergne</li>
-                                                </ul> -->
+                            <p class="icon mt-2 ">
+                            
+                                <a href=""><img src="https://t3.ftcdn.net/jpg/06/56/46/30/240_F_656463080_rP5yQCIXVgUzcyjsSmqyDSNeya8Cc8ZL.jpg"
+                                        alt="" style="width: 30px;height: 30px;"></a>
+                                <button class=" clr button" data-modal="modalTwo"><img src="../public/images/formations/commenter.png" alt=""
+                                        style="width: 24px;height: 24px;"></button>
+                                <button class=" clr button" data-modal="modalOne"><img src="../public/images/formations/voircomment.png"
+                                        alt=""></button>
+                            </p>
+                                
                             </div>
                         </div>
                         <div class="btn3 bd-black">
     
-                            <a href="#" class="btn btn-primary"><button>Ouvrir</button></a>
+                            <a href="#" class="btn btn-primary"><button>ouvrir</button></a>
                             <p class="star"><i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="0"></i>
                                 <i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="1"></i>
                                 <i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="2"></i>
@@ -337,7 +325,7 @@
                 </div>
                 <!-- fin carte1 -->
                 <!-- carte1 -->
-                <div class="card" style="width: 18rem; height:94%;"  id="itemformation">
+                <div class="card" style="width: 18rem; height:94%;"   >
                     <img src="../public/images/formations/uml.png" class="card-img-top" alt="...">
                     <div class="card-body" style="height: 100%;">
                         <p class="card-title text-center"> Modelisation etanalyse d'une base de donnees </p>
@@ -350,23 +338,20 @@
                             </div>
                             <div class="inf2">
                                 <p class="icon mt-2 ">
-                                    <a href=""><img
-                                            src="https://t3.ftcdn.net/jpg/06/56/46/30/240_F_656463080_rP5yQCIXVgUzcyjsSmqyDSNeya8Cc8ZL.jpg"
+                                
+                                    <a href=""><img src="https://t3.ftcdn.net/jpg/06/56/46/30/240_F_656463080_rP5yQCIXVgUzcyjsSmqyDSNeya8Cc8ZL.jpg"
                                             alt="" style="width: 30px;height: 30px;"></a>
-                                    <a href=""><img src="../public/images/formations/commenter.png" alt=""
-                                            style="width: 24px;height: 24px;"></a>
-                                    <a href=""><img src="../public/images/formations/voircomment.png" alt=""></a>
+                                    <button class=" clr button" data-modal="modalTwo"><img src="../public/images/formations/commenter.png" alt=""
+                                            style="width: 24px;height: 24px;"></button>
+                                    <button class=" clr button" data-modal="modalOne"><img src="../public/images/formations/voircomment.png"
+                                            alt=""></button>
                                 </p>
-                                <!-- <ul>
-                                                    <li><i class="bi bi-calendar-fill"></i> &nbsp;inférieur à 3 mois</li>
-                                                    <li><i class="bi bi-hourglass"></i>&nbsp; octobre 2023</li>
-                                                    <li><i class="bi bi-geo-alt-fill"></i>&nbsp;Auvergne</li>
-                                                </ul> -->
+                               
                             </div>
                         </div>
                         <div class="btn3 bd-black">
     
-                            <a href="#" class="btn btn-primary"><button>Ouvrir</button></a>
+                            <a href="#" class="btn btn-primary"><button>ouvrir</button></a>
                             <p class="star"><i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="0"></i>
                                 <i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="1"></i>
                                 <i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="2"></i>
@@ -380,7 +365,7 @@
                 </div>
                 <!-- fin carte1 -->
                 <!-- carte1 -->
-                <div class="card" style="width: 18rem; height:94%;"  id="itemformation">
+                <div class="card" style="width: 18rem; height:94%;"   >
                     <img src="../public/images/formations/ui.png" class="card-img-top" alt="...">
                     <div class="card-body" style="height: 100%;">
                         <p class="card-title text-center"> UX/UI Design Maquetage et prototypase </p>
@@ -393,23 +378,20 @@
                             </div>
                             <div class="inf2">
                                 <p class="icon mt-2 ">
-                                    <a href=""><img
-                                            src="https://t3.ftcdn.net/jpg/06/56/46/30/240_F_656463080_rP5yQCIXVgUzcyjsSmqyDSNeya8Cc8ZL.jpg"
+                                
+                                    <a href=""><img src="https://t3.ftcdn.net/jpg/06/56/46/30/240_F_656463080_rP5yQCIXVgUzcyjsSmqyDSNeya8Cc8ZL.jpg"
                                             alt="" style="width: 30px;height: 30px;"></a>
-                                    <a href=""><img src="../public/images/formations/commenter.png" alt=""
-                                            style="width: 24px;height: 24px;"></a>
-                                    <a href=""><img src="../public/images/formations/voircomment.png" alt=""></a>
+                                    <button class=" clr button" data-modal="modalTwo"><img src="../public/images/formations/commenter.png" alt=""
+                                            style="width: 24px;height: 24px;"></button>
+                                    <button class=" clr button" data-modal="modalOne"><img src="../public/images/formations/voircomment.png"
+                                            alt=""></button>
                                 </p>
-                                <!-- <ul>
-                                                    <li><i class="bi bi-calendar-fill"></i> &nbsp;inférieur à 3 mois</li>
-                                                    <li><i class="bi bi-hourglass"></i>&nbsp; octobre 2023</li>
-                                                    <li><i class="bi bi-geo-alt-fill"></i>&nbsp;Auvergne</li>
-                                                </ul> -->
+                               
                             </div>
                         </div>
                         <div class="btn3 bd-black ">
     
-                            <a href="#" class="btn btn-primary"><button>Ouvrir</button></a>
+                            <a href="#" class="btn btn-primary"><button>ouvrir</button></a>
                             <p class="star"><i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="0"></i>
                                 <i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="1"></i>
                                 <i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="2"></i>
@@ -423,7 +405,7 @@
                 </div>
                 <!-- fin carte1 -->
                 <!-- carte1 -->
-                <div class="card" style="width: 18rem; height:94%;" id="itemformation">
+                <div class="card" style="width: 18rem; height:94%;"  >
                     <img src="../public/images/formations/php.png" class="card-img-top" alt="...">
                     <div class="card-body" style="height: 100%;">
                         <p class="card-title text-center"> Fondementaux en php <br>
@@ -437,23 +419,20 @@
                             </div>
                             <div class="inf2">
                                 <p class="icon mt-2 ">
-                                    <a href=""><img
-                                            src="https://t3.ftcdn.net/jpg/06/56/46/30/240_F_656463080_rP5yQCIXVgUzcyjsSmqyDSNeya8Cc8ZL.jpg"
+                                
+                                    <a href=""><img src="https://t3.ftcdn.net/jpg/06/56/46/30/240_F_656463080_rP5yQCIXVgUzcyjsSmqyDSNeya8Cc8ZL.jpg"
                                             alt="" style="width: 30px;height: 30px;"></a>
-                                    <a href=""><img src="../public/images/formations/commenter.png" alt=""
-                                            style="width: 24px;height: 24px;"></a>
-                                    <a href=""><img src="../public/images/formations/voircomment.png" alt=""></a>
+                                    <button class=" clr button" data-modal="modalTwo"><img src="../public/images/formations/commenter.png" alt=""
+                                            style="width: 24px;height: 24px;"></button>
+                                    <button class=" clr button" data-modal="modalOne"><img src="../public/images/formations/voircomment.png"
+                                            alt=""></button>
                                 </p>
-                                <!-- <ul>
-                                                    <li><i class="bi bi-calendar-fill"></i> &nbsp;inférieur à 3 mois</li>
-                                                    <li><i class="bi bi-hourglass"></i>&nbsp; octobre 2023</li>
-                                                    <li><i class="bi bi-geo-alt-fill"></i>&nbsp;Auvergne</li>
-                                                </ul> -->
+                               
                             </div>
                         </div>
                         <div class="btn3 bd-black">
     
-                            <a href="#" class="btn btn-primary"><button>Ouvrir</button></a>
+                            <a href="#" class="btn btn-primary"><button>ouvrir</button></a>
                             <p class="star"><i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="0"></i>
                                 <i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="1"></i>
                                 <i class="fa-solid fa-star" style="color: #e8e8e8;" data-index="2"></i>
@@ -467,7 +446,7 @@
                 </div>
                 <!-- fin carte1 -->
                 <!-- carte1 -->
-                <div class="card" style="width: 18rem; height:94%;"  id="itemformation">
+                <div class="card" style="width: 18rem; height:94%;"   >
                     <img src="../public/images/formations/canva.png" class="card-img-top" alt="...">
                     <div class="card-body" style="height: 100%;">
                         <p class="card-title  text-center"> Design logo et presentation <br>
@@ -480,25 +459,21 @@
                                 &nbsp;<p style="font-size: 10px;">Darray Technologie</p>&nbsp;
                             </div>
                             <div class="inf2">
-                                <p class="icon mt-2 ">
-                                    <a href=""><img
-                                            src="https://t3.ftcdn.net/jpg/06/56/46/30/240_F_656463080_rP5yQCIXVgUzcyjsSmqyDSNeya8Cc8ZL.jpg"
-                                            alt="" style="width: 30px;height: 30px;"></a>
-                                    <a href="" data-modal="modalTwo">
-                                        <img src="../public/images/formations/commenter.png" alt=""
-                                            style="width: 24px;height: 24px;"></a>
-                                    <a href=""><img src="../public/images/formations/voircomment.png" alt=""></a>
-                                </p>
-                                <!-- <ul>
-                                                    <li><i class="bi bi-calendar-fill"></i> &nbsp;inférieur à 3 mois</li>
-                                                    <li><i class="bi bi-hourglass"></i>&nbsp; octobre 2023</li>
-                                                    <li><i class="bi bi-geo-alt-fill"></i>&nbsp;Auvergne</li>
-                                                </ul> -->
+                            <p class="icon mt-2 ">
+                            
+                                <a href=""><img src="https://t3.ftcdn.net/jpg/06/56/46/30/240_F_656463080_rP5yQCIXVgUzcyjsSmqyDSNeya8Cc8ZL.jpg"
+                                        alt="" style="width: 30px;height: 30px;"></a>
+                                <button class=" clr button" data-modal="modalTwo"><img src="../public/images/formations/commenter.png" alt=""
+                                        style="width: 24px;height: 24px;"></button>
+                                <button class=" clr button" data-modal="modalOne"><img src="../public/images/formations/voircomment.png"
+                                        alt=""></button>
+                            </p>
+                               
                             </div>
                         </div>
                         <div class="btn3 bd-black ">
     
-                            <a href="#" class="btn btn-primary"><button>Ouvrir</button></a>
+                            <a href="#" class="btn btn-primary"><button>ouvrir</button></a>
                             <p class="star"><i class="fa-solid stargrey fa-star" style="color: #e8e8e8;" data-index="0"></i>
                                 <i class="fa-solid stargrey fa-star" style="color: #e8e8e8;" data-index="1"></i>
                                 <i class="fa-solid stargrey fa-star" style="color: #e8e8e8;" data-index="2"></i>
@@ -512,29 +487,42 @@
                 </div>
                 <!-- fin carte1 -->
             </div>
-    
-    
+
+        
         </div>
-    
-        <!-- </div> -->
-    
-    
     
     </section>
-    
+    <!--end section formation  -->
     <!-- section pagination -->
     <!-- <section> -->
-    <div class="container contpagination mb-5">
-        <div class="pagination ">
-            <a href="#">Preview</a>
-            <a href="#" class="active">1</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
-            <a href="#">Next</a>
+        <div class="pagination">
+            <ul>
+                <a href="#">
+                    <li class="sansborder">Pre</li>
+                </a>
+                <a class="is-active" href="#">
+                    <li class="bdr">1</li>
+                </a>
+                <a href="#">
+                    <li class="bdr">2</li>
+                </a>
+                <a href="#">
+                    <li class="bdr">3</li>
+                </a>
+                <a href="#">
+                    <li class="bdr">4</li>
+                </a>
+                <a href="#">
+                    <li class="bdr">5</li>
+                </a>
+                <a href="#">
+                    <li class="bdr">6</li>
+                </a>
+                <a href="#">
+                    <li class="sansborder">Next</li>
+                </a>
+            </ul>
         </div>
-    
-    </div>
-    
     <!-- </section> -->
 
     <!-- end section formation -->
@@ -561,12 +549,12 @@
                     <div>
                         <textarea rows="4" class="fname" id="messageInput"></textarea>
                     </div>
-                    <button type="submit" href="#">Publier</button>
+                    <button type="submit" href="#"  class="close">Publier</button>
                 </form>
             </div>
         </div>
     </div>
-    <!-- Debut section Footer -->
+    
     <footer>
         <div class="footer-container">
             <div class="section-footer">
@@ -591,7 +579,7 @@
                 <div>
                     <h3>Liens Utiles</h3>
                     <p><a href="../services/service.html">Services</a></p>
-                    <p><a href="../politique-confidentialite/confidentialite.html">Politique de confidentialite</a></p>
+                    <p><a href="../politique-confidentialite/confidentialite.htmt">Politique de confidentialite</a></p>
                     <p><a href="../politique-cookies/cookies.html">politique d’utilisation des cookies</a></p>
                     <p><a href="../politique-d'utilisation/utilisation.html">condition générale d’utilisation</a></p>
                 </div>
@@ -603,8 +591,12 @@
                 </div>
                 <div>
                     <h3>Newsletter</h3>
-                    <input type="text" class="input-newsletter" placeholder="Enter your email ">
-                    <button class="btn-suscribe">Suscribe</button>
+                    <form action="" id="formInput">
+                        <input class="form-control input-newsletter" type="text" placeholder="Enter your mail" id="Email">
+                        <button class="btn btn-suscribe">Suscribe</button>
+                    </form>
+
+
                 </div>
             </div>
         </div>
@@ -693,25 +685,37 @@
         })
         
     </script>
+    <!-- script pour popup -->
     <script>
-        // fonction Recherche             
-        function searchList() {
-            var input, filter, card, item, i, text;
-            input = document.getElementById('searchInput');
-            filter = input.value.toUpperCase();
-            card = document.querySelector('.candidater_carte');
-            item = card.getElementsByClassName('itemformation');
-            for (i = 0; i < item.length; i++) {
-                text = item[i].textContent || item[i].innerText;
-                if (text.toUpperCase().indexOf(filter) > -1) {
-                    item[i].style.display = '';
-                } else {
-                    item[i].style.display = 'none';
+        let modalBtns = [...document.querySelectorAll(".button")];
+            modalBtns.forEach(function (btn) {
+                btn.onclick = function () {
+                    let modal = btn.getAttribute("data-modal");
+                    document.getElementById(modal).style.display = "block";
+                };
+            });
+            let closeBtns = [...document.querySelectorAll(".close")];
+            closeBtns.forEach(function (btn) {
+                btn.onclick = function () {
+                    let modal = btn.closest(".modal");
+                    modal.style.display = "none";
+                };
+            });
+            window.onclick = function (event) {
+                if (event.target.className === "modal") {
+                    event.target.style.display = "none";
                 }
-            }
-        }
-
+            };
     </script>
+   
     <script src="../public/js/local.js"></script>
+    <script src="../formations/formation.js"></script>
+
+    <!-- Link js -->
+    <script src="../public/js/header-footer.js"></script>
+    <!-- sweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </body>
 </html>
