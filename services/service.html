@@ -16,8 +16,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Script-bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <!-- Link js -->
-    <script src="../public/js/header-footer.js"></script>
     <link rel="stylesheet" href="../public/css/page_apropos.css">
     <link rel="stylesheet" href="../public/css/service.css">
     <link rel="stylesheet" href="../public/css/team.css">
@@ -98,8 +96,7 @@
                     <!-- Section Heading-->
                     <div class="section_heading text-center  titre_service">
                         <h3 class="titre_service">Pourquoi nous choisir</h3>
-                        <!-- <hr> -->
-                        <span class="soulignement"></span>
+                        <hr>
     
                     </div>
                 </div>
@@ -211,12 +208,11 @@
     <!-- end text servive -->
 
     <!--  section service  -->
-    <section class="serv mb-5" id="decouService">
+    <section class="serv mb-3" id="decouService">
         <div class="container ">
             <div class=" text-center  titre_service">
                 <h3>Nos services</h3>
-                <!-- <hr> -->
-                <span class="soulignement"></span>
+                <hr>
             </div>
     
             <div class="row   boxservice">
@@ -357,8 +353,10 @@
                 </div>
                 <div>
                     <h3>Newsletter</h3>
-                    <input type="text" class="input-newsletter" placeholder="Enter your email ">
-                    <button class="btn-suscribe">Suscribe</button>
+                    <form action="" id="formInput">
+                        <input class="form-control input-newsletter" type="text" placeholder="Enter your mail" id="Email">
+                        <button class="btn btn-suscribe">Suscribe</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -447,5 +445,11 @@
         })
         
     </script>
+    <!-- Link js -->
+    <script src="../public/js/header-footer.js"></script>
+    <!-- sweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </body>
 </html>
