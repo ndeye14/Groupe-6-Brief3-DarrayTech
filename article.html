@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article</title>
+    <!-- Link css -->
+    <link rel="stylesheet" href="../public/css/header-footer.css">
+    <!-- Link Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- link cdn icon bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- link fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Script-bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../public/css/articles.css">
+</head>
+<body>
+    <!-- Header -->
+    <div id="progress">
+        <span id="progressValue">&#x1F815</span>
+    </div>
+    <!-- Debut section menu -->
+    <div class="container-menu">
+        <div class="first-menu">
+            <div class="icone-left">
+                <p class="d-inline"><i class="bi bi-telephone"></i> 774065868</p>
+                <p class="d-inline"><i class="bi bi-envelope"></i> djibysec8@gmail.com</p>
+                <p class="d-inline"><i class="bi bi-geo-alt"></i> DAKAR, SENEGAL</p>
+            </div>
+            <div class="icone-right">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-youtube"></i>
+                <i class="bi bi-linkedin"></i>
+                <i class="bi bi-twitter"></i>
+            </div>
+        </div>
+        <div class="second-menu navContainer navBar">
+            <div class="second-menu-img">
+                <a href="../header-footer/header-footer.html"><img src="https://yt3.googleusercontent.com/oYOaUPpYjb58Bn1PeV7GKJq3eEMGqQF0TSsDy4qYAzhnB8WQVk6KuzL89WDwMtaxIkRY-23dh7A=s900-c-k-c0x00ffffff-no-rj"
+                    alt=""></a>
+            </div>
+            <div class="second-menu-link">
+                <ul>
+                    <li><a href="../header-footer/header-footer.html">Accueil</a></li>
+                    <li><a href="../apropos/apropos.html">A propos</a></li>
+                    <li><a href="../formations/formation.html">Formation</a></li>
+                    <li><a class="active" href="../articles/article.html">Article</a></li>
+                    <li><a href="../temoignages/temoignage.html">Témoignages</a></li>
+                    <li><a href="../contact/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="dropMenu dropMenuHidden">
+                <span class="close"><i class="fa-solid fa-xmark"></i></span>
+                <nav class="dropNav">
+                    <ul class="dropFirst">
+                        <li><a class="active" href="../header-footer/header-footer.html">Accueil</a></li>
+                        <li><a href="../apropos/apropos.html">A propos</a></li>
+                        <li><a href="../formations/formation.html">Formation</a></li>
+                        <li><a href="../articles/article.html">Article</a></li>
+                        <li><a href="../temoignages/temoignage.html">Témoignages</a></li>
+                        <li><a href="../contact/contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="burger">
+                <i class="fa-solid fa-bars iconeBarRight" id="cach" style="font-size: 25px;"></i>
+            </div>
+        </div>
+    </div>
+    <div class="Votre_Contenu_ici">
+        <div class="banierre">
+            <div class="title">
+                <h1 class="card-title mb-5 text-dark fw-bold px-5 mt-5">Découvrez <br> comment les services <br> web</h1>
+                <!-- <p class="card-text text-dark">
+                    Créateurs de solutions pour un monde <br> numérique.
+                </p> -->
+                <a href="#articles"><button class="fw-bold ms-5 mb-5 btn-decouvrir">Découvrir</button></a>
+            </div>                
+        </div>
+    </div>
+    <section class="articles">
+        <div class="titreArticles">
+            <h3>Nos Articles</h3>
+            <div class="trait"></div>
+        </div>
+        <div class="container">
+            <div class="rechercheArticles">
+                <div class="nbrArticles">
+                    <p>6 Articles</p>
+                </div>
+                <div class="zoneArticles">
+                    <div class="champRecherche">
+                        <input type="search" name="" id="searchInput"placeholder="Recherche un article">
+                    </div>
+                    <div class="btnRecherche">
+                        <button><i class="fa-solid fa-magnifying-glass"  onclick="searchList()"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="cardArticles" id="articles">
+                <div class="itemArticles">
+                    <img src="../public/images/articles/Rectangle 1253.png" alt="">
+                    <h4>Tutoriels de programmation</h4>
+                    <p>Une guide pas à pas sur des langages de programmation (comme HTML, CSS, JavaScript), des frameworks (comme React, Angular, Vue.js), ou des outils de développement (Visual Studio Code, Git).</p>
+                    <hr>
+                    <span class="iconeGauche">
+                        <i class="fa-solid fa-list button" data-modal="modalOne"></i>
+                        <i class="fa-regular fa-message button" data-modal="modalTwo"></i>
+                    </span>
+                    <span class="iconedroite">
+                        <i class="fa-regular fa-square-plus button" data-modal="modalThree"></i>
+                    </span>
+                </div>
+                <div class="itemArticles">
+                    <img src="../public/images/articles/Rectangle 1255.png" alt="">
+                    <h4>Conception web et UX/UI</h4>
+                    <p>Les meilleures pratiques en matière de conception web, de l'expérience utilisateur (UX) et de l'interface utilisateur (UI). Explorez des outils et des techniques pour améliorer la convivialité des sites web.</p>
+                    <hr>
+                    <span class="iconeGauche">
+                        <i class="fa-solid fa-list"></i>
+                        <i class="fa-regular fa-message"></i>
+                    </span>
+                    <span class="iconedroite">
+                        <i class="fa-regular fa-square-plus"></i>
+                    </span>
+                </div>
+                <div class="itemArticles">
+                    <img src="../public/images/articles/Rectangle 1257.png" alt="">
+                    <h4>Développement backend</h4>
+                    <p>Abordez des sujets liés au développement côté serveur, y compris les bases de données, les serveurs web, les API, et les langages de programmation backend comme Node.js, Python, Ruby, etc.</p>
+                    <hr>
+                    <span class="iconeGauche">
+                        <i class="fa-solid fa-list"></i>
+                        <i class="fa-regular fa-message"></i>
+                    </span>
+                    <span class="iconedroite">
+                        <i class="fa-regular fa-square-plus"></i>
+                    </span>
+                </div>
+                <div class="itemArticles">
+                    <img src="../public/images/articles/Rectangle 1261.png" alt="">
+                    <h4>Optimisation des performances</h4>
+                    <p>Nous vous conseillons  sur la manière d'optimiser la vitesse et la performance des sites web, y compris la gestion du contenu statique, la mise en cache, la compression et l'optimisation des images</p>
+                    <hr>
+                    <span class="iconeGauche">
+                        <i class="fa-solid fa-list"></i>
+                        <i class="fa-regular fa-message"></i>
+                    </span>
+                    <span class="iconedroite">
+                        <i class="fa-regular fa-square-plus"></i>
+                    </span>
+                </div>
+                <div class="itemArticles">
+                    <img src="../public/images/articles/Rectangle 1262.png" alt="">
+                    <h4>Sécurité web</h4>
+                    <p>Venez découvrir avec nous les meilleures pratiques en matière de sécurité web, y compris la protection contre les attaques de sécurité courantes, la gestion des certificats SSL et la sécurité des données.</p>
+                    <hr>
+                    <span class="iconeGauche">
+                        <i class="fa-solid fa-list"></i>
+                        <i class="fa-regular fa-message"></i>
+                    </span>
+                    <span class="iconedroite">
+                        <i class="fa-regular fa-square-plus"></i>
+                    </span>
+                </div>
+                <div class="itemArticles">
+                    <img src="../public/images/articles/Rectangle 1263.png" alt="">
+                    <h4>Nouveautés et tendances</h4>
+                    <p>Restez à jour avec les dernières tendances en matière de développement web, y compris les technologies émergentes comme WebAssembly, les Progressive Web Apps (PWA) et le développement de sites web réactifs.</p>
+                    <hr>
+                    <span class="iconeGauche">
+                        <i class="fa-solid fa-list"></i>
+                        <i class="fa-regular fa-message"></i>
+                    </span>
+                    <span class="iconedroite">
+                        <i class="fa-regular fa-square-plus"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="pagination">
+                <ul>
+                    <a href="#"><li class="sansborder">Pre</li></a>
+                    <a class="is-active" href="#"><li class="bdr">1</li></a>
+                    <a href="#"><li class="bdr">2</li></a>
+                    <a href="#"><li class="bdr">3</li></a>
+                    <a href="#"><li class="bdr">4</li></a>
+                    <a href="#"><li class="bdr">5</li></a>
+                    <a href="#"><li class="bdr">6</li></a>
+                    <a href="#"><li class="sansborder">Next</li></a>
+                  </ul>
+            </div>
+
+            <!-- Pop-Up -->
+            <div id="modalOne" class="modal">
+                <div class="modal-content">
+                  <div class="listeCommentaire">
+                    <a class="close">&times;</a>
+                      <h2>Listes des commentaires</h2>
+                  </div>
+                </div>
+            </div>
+            <div id="modalTwo" class="modal">
+                <div class="modal-content">
+                  <div class="contact-form">
+                    <span class="close">&times;</span>
+                    <form action="/">
+                      <h2>Laissez un commentaire</h2>
+                      <div>
+                        <label for="nameInput">Nom d’utilisateur</label>
+                        <input class="fname" type="text"id="nameInput" name="name"/>
+                      </div>
+                      <span>Message</span>
+                      <div>
+                        <textarea rows="4" class="fname" id="messageInput"></textarea>
+                      </div>
+                      <button type="submit" href="/">Publier</button>
+                    </form>
+                  </div>
+                </div>
+            </div>
+            <div id="modalThree" class="modal">
+                <div class="modal-content">
+                  <div class="detailsArticles">
+                    <!-- <a class="close">&times;</a> -->
+                    <div class="image">
+                        <img src="../public/images/articles/Rectangle 1253.png" alt="">
+                    </div>
+                    <div class="contenuArticle">
+                        <h5>Les Fondements du Développement Web : Langages, Outils et Ressources</h5>
+                        <p>Le développement web est un domaine en constante évolution, offrant une myriade d'opportunités pour les personnes qui cherchent à créer des sites web et des applications. 
+                            Que vous soyez un débutant curieux ou un développeur expérimenté qui souhaite approfondir ses compétences, ce guide vous fournira une introduction complète aux langages et outils.</p>
+                            <span>Les Langages</span>
+                        <ul>
+                            <li class="liste">HTML (HyperText Markup Language) : HTML est la pierre angulaire du développement web. Il est utilisé pour créer la structure de base des pages web en utilisant des balises pour définir les éléments comme les titres, les paragraphes, les liens, et les images.</li>
+                            <li class="liste">CSS (Cascading Style Sheets) : CSS est le langage qui permet de styliser les pages web. Il vous permet de définir les couleurs, les polices, les marges et les mises en page, ce qui permet de donner à votre site une apparence visuellement attrayante.</li>
+                            <li class="liste">JavaScript : JavaScript est un langage de programmation qui ajoute de l'interactivité à votre site web. Il peut être utilisé pour créer des fonctionnalités dynamiques, des animations, des formulaires interactifs, et bien plus encore.</li>
+                        </ul>
+                        <span>Les Outils de Développement</span> 
+                        <ul>
+                            <li class="liste">Éditeurs de Code : Des outils tels que Visual Studio Code, Sublime Text, et Atom sont largement utilisés pour écrire du code. Ils offrent des fonctionnalités telles que la coloration syntaxique, l'autocomplétion, et la gestion de projets.</li>
+                            <li class="liste">Systèmes de Gestion de Versions (VCS) : Les VCS comme Git sont essentiels pour suivre les modifications apportées à votre code, collaborer avec d'autres développeurs, et gérer les versions de votre projet.</li>
+                            <li class="liste">Navigateurs Web et Outils de Développement : Les navigateurs comme Google Chrome, Mozilla Firefox et leurs outils de développement intégrés sont des ressources précieuses pour le test, le débogage, et l'optimisation de votre site.</li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <script>
+                // Pop-Up
+            let modalBtns = [...document.querySelectorAll(".button")];
+            modalBtns.forEach(function (btn) {
+                btn.onclick = function () {
+                let modal = btn.getAttribute("data-modal");
+                document.getElementById(modal).style.display = "block";
+                };
+            });
+            let closeBtns = [...document.querySelectorAll(".close")];
+            closeBtns.forEach(function (btn) {
+                btn.onclick = function () {
+                let modal = btn.closest(".modal");
+                modal.style.display = "none";
+                };
+            });
+            window.onclick = function (event) {
+                if (event.target.className === "modal") {
+                event.target.style.display = "none";
+                }
+            };
+
+            // fonction Recherche
+            function searchList() {
+            var input, filter, card, item, i, text;
+            input = document.getElementById('searchInput');
+            filter = input.value.toUpperCase();
+            card = document.querySelector('.cardArticles');
+            item = card.getElementsByClassName('itemArticles');
+
+            for (i = 0; i < item.length; i++) {
+                text = item[i].textContent || item[i].innerText;
+                if (text.toUpperCase().indexOf(filter) > -1) {
+                    item[i].style.display = '';
+                } else {
+                    item[i].style.display = 'none';
+                }
+            }
+        }
+            </script>
+            <script src="local.js"></script>
+        </div>
+    </section>
+    <!-- Debut section Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="section-footer">
+                <div class="Section_Footer_logo">
+                    <h3>Daraay<span style="color: #E94D1A;">Technologie</span></h3>
+                    <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut diam sapien.</p>
+                    <div class="contain-social-media d-flex">
+                        <div class="icone-social" style="background-color:#E94D1A;">
+                            <i class="bi bi-instagram"></i>
+                        </div>
+                        <div class="icone-social">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <div class="icone-social">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div class="icone-social">
+                            <i class="bi bi-youtube"></i>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3>Liens Utiles</h3>
+                    <p><a href="../services/service.html">Services</a></p>
+                    <p><a href="../politique-confidentialite/confidentialite.htmt">Politique de confidentialite</a></p>
+                    <p><a href="../politique-cookies/cookies.html">politique d’utilisation des cookies</a></p>
+                    <p><a href="../politique-d'utilisation/utilisation.html">condition générale d’utilisation</a></p>
+                </div>
+                <div class="section-contact">
+                    <h3>Nous Contacter</h3>
+                    <p><a href=""><i class="bi bi-envelope"></i> djibysec8@gmail.com</a></p>
+                    <p><a href=""><i class="bi bi-geo-alt"></i> Dakar,Senegal</a></p>
+                    <p><a href=""><i class="bi bi-telephone"></i> +221 774065868</a></p>
+                </div>
+                <div>
+                    <h3>Newsletter</h3>
+                    <form action="" id="formInput">
+                        <input class="form-control input-newsletter" type="text" placeholder="Enter your mail" id="Email">
+                        <button class="btn btn-suscribe">Suscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <script>
+        //navBar fixed
+        let navBarFixed = () => {
+            let navBar = document.querySelector(".navContainer");
+
+            let pos = document.documentElement.scrollTop;
+            console.log(pos)
+
+            if (pos > 10) {
+                navBar.classList.add("fixed");
+
+            } else {
+                navBar.classList.remove("fixed");
+            }
+        };
+
+        // scroll
+        let calcScrollValue = () => {
+            let scrollProgress = document.getElementById('progress');
+            let scrolProgressValue = document.getElementById('progressValue');
+
+            let pos = document.documentElement.scrollTop;
+            let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrollValue = Math.round((pos * 100) / calcHeight)
+            if (pos > 10) {
+                scrollProgress.style.display = 'grid';
+            } else {
+                scrollProgress.style.display = 'none';
+            }
+
+            scrollProgress.addEventListener('click', () => {
+                document.documentElement.scrollTop = 0;
+            })
+
+            scrollProgress.style.background = `conic-gradient( #E94D1A ${scrollValue}%, white ${scrollValue}%)`;
+        }
+
+        // Ajouter un seul gestionnaire d'événements
+        window.addEventListener('scroll', () => {
+            navBarFixed();
+            calcScrollValue();
+        });
+
+        // Exécutez les fonctions une fois au chargement de la page
+        window.addEventListener('load', () => {
+            navBarFixed();
+            calcScrollValue();
+        });
+
+        //menu
+        // let menuTogler = document.querySelector('.menuTogler');
+        // let menuToglerIcon = document.querySelector('.menuTogler i');
+        // let dropDownMenu = document.querySelector('.dropDownMenu');
+
+        // menuTogler.onclick = function () {
+        //     dropDownMenu.classList.toggle('open');
+        //     let isOpen = dropDownMenu.classList.contains('open');
+
+        //     menuToglerIcon.classList = isOpen ? 'bi bi-x ' : 'bi bi-list ';
+        // }
+
+
+
+        const burger = document.querySelector('.burger');
+        console.log(burger);
+
+        const dropMenuHidden = document.querySelector('.dropMenuHidden');
+        console.log(dropMenuHidden);
+
+        const close = document.querySelector('.close');
+        console.log(close);
+
+        burger.addEventListener('click', () => {
+            // alert('bonjour');
+            dropMenuHidden.style.left= '0';
+        })
+
+        close.addEventListener('click', () => {
+            // alert('bonjour');
+            dropMenuHidden.style.left= '-700px';
+        })
+        
+    </script>
+     <!-- Link js -->
+     <script src="../public/js/header-footer.js"></script>
+      <script src="../public/js/header-footer.js"></script>
+      <!-- sweetAlert -->
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <!-- Jquery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+</html>
