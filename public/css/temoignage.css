@@ -1,4 +1,4 @@
-.banierreT {
+#banierreT {
     background-image: url('../images/bannieres/banner_testimonial.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -60,7 +60,7 @@
     align-items: center;
 }
 #soulignement{
-    width: 20%;
+    width: 10%;
     display: block;
     margin: 0 auto;
     background-color: var(--second-color);
@@ -88,6 +88,26 @@
     }
        
  }
+ .input-newsletter{
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+}
+input::placeholder{
+   padding: 2vh;
+   color: #525252;
+   font-size: 0.8em;
+}
+.btn-suscribe{
+    background-color: var(--second-color);
+    color: var(--white-color);
+    width: 50%;
+    height: 35px;
+    border: none;
+    margin-top: 8px;
+    border-radius: 5px;
+}
 
 @media only screen  and (max-width: 990px) {
     

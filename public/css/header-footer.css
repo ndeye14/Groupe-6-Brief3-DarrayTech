@@ -16,6 +16,8 @@
 }
 
 /*--------------- Debut Section Menu---------- */
+
+
 #progress {
     background-color: #061429;
     position: fixed;
@@ -42,7 +44,7 @@
     color: white;
     font-weight: bold;
 }
-.banierre{
+#banner-accueil {
     background-image: url('../images/bannieres/banner_acceuil.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -126,6 +128,8 @@
 .second-menu-img img {
     max-width: 100px;
     max-height: 65px;
+    /* border: 2px solid; */
+    margin-top: -18px;
 }
 .second-menu-link{
     margin-right: 15vh;

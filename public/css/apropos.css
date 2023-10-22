@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    list-style: none;
+    font-family: Verdana;
+}
+
+/* Declaration des variables pour les  couleurs */
+:root{
+    --main-color: #1F425D;
+    --second-color: #E94D1A;
+    --third-color: #4AB9CF;
+    --white-color: #FFFFFF;
+}
+/* banner */
+.banierre {
+    background-image: url('../images/bannieres/banner_apropos.png') !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+    margin-top: -2vh;
+    color: white;
+    padding: 28vh 0;
+}
+
+.banierre h1 {
+    font-size: 9vh;
+}
+/* end banner */
+#secapropos{
+    background-color: #f3f3f3;
+}
+#seccompteur{
+    background-color: var(--second-color);
+    width: 100%;
+}
+#container_apropos{
+    background:#f3f3f3 ;
+    /* width: 100%; */
+    /* height: auto; */
+    /* margin: 0 auto; */
+}
+#container_apropos h3{
+ text-align: center;
+ padding-top: 20px;
+}
+#container_apropos hr{
+ text-align: center;
+ width: 15%;
+ margin: 4px auto;
+ border: 2px solid var(--second-color) !important;
+
+}
+.sous_container{
+    display: flex;
+    width: 100%;
+    height:100%;
+     color: rgb(0, 0, 0);
+     gap: 2%;
+     margin-top: 2%;
+}
+.sous_container .droite1{
+ margin-top: 2%;
+ width: 60%;
+ height: 50% !important;
+ text-align: justify;
+}
+/* End Section aprpos */
+.sous_container .gauche1{
+ width: 40%;
+ height: 50%;
+}
+.sous_container .gauche1 img{
+ width: 100%;
+ height: 300px;
+}
+/* End Section aprpos */
+
+/* section compteur */
+#container_compteur{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   width: 100%;
+    background-color: var(--second-color);
+margin: 0 auto;
+    text-align: center;
+    padding: 1% 8%;
+}
+.cont1{
+
+color: white !important;
+font-weight: 700%;
+margin: 0 auto;
+font-size: 32px;
+}
+#container_compteur .cont1:nth-child(1){
+    border-right: 3px solid white;
+    text-align: center;
+
+}
+#container_compteur .cont1:nth-child(2){
+    border-right: 3px solid white;
+
+}
+.iconi{
+    font-size: 50px;
+}
+
+/*end  section compteur */
+/* faq */
+
+#accordionExample{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 3%;
+   
+
+
+}
+.titre_faq{
+    text-align: center;
+    font-family: Verdana;
+}
+.titre_faq .trait{
+    width: 6%;
+    height: 5px;
+    border: none;
+    border-radius: 8px;
+    background-color: #E94D1A ;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.input-newsletter{
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+}
+input::placeholder{
+   padding: 2vh;
+   color: #525252;
+   font-size: 0.8em;
+}
+.btn-suscribe{
+    background-color: var(--second-color);
+    color: var(--white-color);
+    width: 50%;
+    height: 35px;
+    border: none;
+    margin-top: 8px;
+    border-radius: 5px;
+}
+
+
+/*End  faq */
+
+
+/* responsive de la page apropos */
+@media screen and (max-width: 768px){
+   .sous_container{
+    flex-direction: column;
+}
+ .gauche1 img{
+    width:460px !important;
+}
+   
+ .droite1 {
+    text-align: justify;
+    margin: 0 auto;
+}
+ .droite1 p{
+    text-align: center !important;
+}
+   
+    #container_compteur{
+        display: flex;
+        flex-direction:column ;
+    }
+    #container_compteur .cont1:nth-child(1){
+        border-bottom: 3px solid white;
+        border-right: 0;
+      
+    
+    }
+    #container_compteur .cont1:nth-child(2){
+        border-bottom: 3px solid white;
+        border-right: 0;
+      
+    
+    }
+        .banierre h1 {
+            display: none;
+        }
+}
+/* end  responsive de la page apropos */
